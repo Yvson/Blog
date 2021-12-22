@@ -329,34 +329,34 @@ Before starting coding a new project, you might ask yourself about what is going
 
 Once the project idea for a MVP (Minimum Viable Product) is established, it is time to define the Django responsibility in the whole system. The scenarios could be: 
 
-1. **Total Responsability:**
+1. **Total Responsibility:**
     - Django serves the client from Front-end to Back-end through its Web Server Gateway Interface (WSGI) or Asynchronous Server Gateway Interface (ASGI). The original architecture of django (MTV) is enforced to the project since the django web app handles everything. This is the traditional approach for building a django Project.
     
         | *Figure 1 - Full Django System.* |
         | :--: |
-        | ![total-responsability](https://raw.githubusercontent.com/Yvson/blog/main/posts/introduction-django/total_responsability_django.png) |
+        | ![total-responsibility](https://raw.githubusercontent.com/Yvson/blog/main/posts/introduction-django/total_responsibility_django.png) |
         | *All project is based on Django ecosystem.* |
 
 
-2. **Partial/Hybrid Responsability:**
+2. **Partial/Hybrid Responsibility:**
     - In this scenario, Django WSGI still serves the web server and controls how pages are displayed on the screen. However, javascript files have an indispensable role in this setup. They build the elements in the DOM tree together with the Django Template Language. This approach brings more flexibility to the project, but it can make the maintenance of the code harder due to lack of structure and organization.
 
         | *Figure 2 - Django serving Static JS Files.* |
         | :--: |
-        | ![partial-responsability](https://raw.githubusercontent.com/Yvson/blog/main/posts/introduction-django/partial_responsability_django.png) |
+        | ![partial-responsibility](https://raw.githubusercontent.com/Yvson/blog/main/posts/introduction-django/partial_responsibility_django.png) |
         | *The project is served by Django, but the Front-end is built with Javascript and Django Template Language.* |
 
-3. **Minimum Responsability:**
+3. **Minimum Responsibility:**
     - In this case, django is exclusively responsible for handling the back-end and usually does it by implementing an API with REST architecture or GraphQL. The front-end is supplied to the user through static files (Figure 3) or Node.js server (Figure 4) via a web server.
 
         | *Figure 3 - Django + Static JS Files.* |
         | :--: |
-        | ![minimum-responsability-1](https://raw.githubusercontent.com/Yvson/blog/main/posts/introduction-django/minimum_responsability_django_1.png) |
+        | ![minimum-responsibility-1](https://raw.githubusercontent.com/Yvson/blog/main/posts/introduction-django/minimum_responsibility_django_1.png) |
         | *The Front-end is served by the web server through static files and the Back-end is served by Django.* |
 
         | *Figure 4 - Django + Node.js.* |
         | :--: |
-        | ![minimum-responsability-2](https://raw.githubusercontent.com/Yvson/blog/main/posts/introduction-django/minimum_responsability_django_2.png) |
+        | ![minimum-responsibility-2](https://raw.githubusercontent.com/Yvson/blog/main/posts/introduction-django/minimum_responsibility_django_2.png) |
         | *The Front-end is served by a Node.js server and the Back-end is served by Django.* |
 
 
